@@ -1,0 +1,17 @@
+body {
+    background-color:beige;
+}
+
+h1 {
+    color:blue;
+    text-align: center;
+}
+
+hr {
+    height: 10px;
+    background:black;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
