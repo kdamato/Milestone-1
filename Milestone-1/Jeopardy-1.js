@@ -1,0 +1,1 @@
+var myScore = 0;

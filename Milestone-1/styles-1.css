@@ -4,9 +4,9 @@ body {
 
 h1 {
     color:white;
-    text-align: center;
+    text-align: left;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
     align-items: center;
     height: 10vh;
@@ -53,4 +53,13 @@ th, td {
 
 button:hover {
     opacity: 0.5;
+}
+
+.score {
+    color: white;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    align-items: center;
 }
