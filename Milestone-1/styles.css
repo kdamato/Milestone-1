@@ -1,13 +1,19 @@
 body {
-    background-color:beige;
+    background-color:black;
 }
 
 h1 {
-    color:blue;
+    color:white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    height: 10vh;
 }
 
 hr {
+    color: white;
     height: 10px;
     background:black;
 }
@@ -15,3 +21,36 @@ hr {
 table, th, td {
     border: 1px solid black;
   }
+
+table {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    height: 80vh;
+    background-color: black;
+}
+
+th {
+    color: white;
+}
+
+td button{
+    background: blue;
+    color: gold;
+    align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+th, td {
+    background: blue;
+    margin: 15px;
+    padding: 15px;
+    border: black 5px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
