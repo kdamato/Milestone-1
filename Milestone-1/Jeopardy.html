@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milestone Project 1</title>
-    <link rel="stylesheet" href="styles-1.css">
-    <script src="Jeopardy-1.js"></script>
-    <script src="boardQuestions.js"></script>
+    <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
     <h1>Jeopardy!</h1>
-    <p class="score-tracker">Score <span class="score-counter"></span></p>
     <table>
         <!--- Table Headers -->
         <tr>
@@ -22,45 +19,47 @@
             <th>Category 5</th>
         </tr>
         <!--- Table Rows 500 points -->
-        <tr>
-            <td><button id="c1-500">500</button></td>
-            <td><button>500</button></td>
-            <td><button>500</button></td>
-            <td><button>500</button></td>
-            <td><button>500</button></td>
+        <tr id = 'category1'>
+            <!-- <td><button onclick="checkAnswer()">500</button></td>
+            <td><button onclick="prompt()">500</button></td>
+            <td><button onclick="prompt()">500</button></td>
+            <td><button onclick="prompt()">500</button></td>
+            <td><button onclick="prompt()">500</button></td> -->
         </tr>
         <!--- Table Rows 400 points -->
-        <tr>
-            <td><button>400</button></td>
-            <td><button>400</button></td>
-            <td><button>400</button></td>
-            <td><button>400</button></td>
-            <td><button>400</button></td>
+        <tr id = 'category2'>
+            <!--<td><button onclick="prompt()">400</button></td>
+            <td><button onclick="prompt()">400</button></td>
+            <td><button onclick="prompt()">400</button></td>
+            <td><button onclick="prompt()">400</button></td>
+            <td><button onclick="prompt()">400</button></td> -->
         </tr>
         <!--- Table Rows 300 points -->
-        <tr>
-            <td><button>300</button></td>
-            <td><button>300</button></td>
-            <td><button>300</button></td>
-            <td><button>300</button></td>
-            <td><button>300</button></td>
+        <tr id = 'category3'>
+            <!-- <td><button onclick="prompt()">300</button></td>
+            <td><button onclick="prompt()">300</button></td>
+            <td><button onclick="prompt()">300</button></td>
+            <td><button onclick="prompt()">300</button></td>
+            <td><button onclick="prompt()">300</button></td> -->
         </tr>
         <!--- Table Rows 200 points -->
-        <tr>
-            <td><button>200</button></td>
-            <td><button>200</button></td>
-            <td><button>200</button></td>
-            <td><button>200</button></td>
-            <td><button>200</button></td>
+        <tr id= 'category4'>
+            <!-- <td><button onclick="prompt()">200</button></td>
+            <td><button onclick="prompt()">200</button></td>
+            <td><button onclick="prompt()">200</button></td>
+            <td><button onclick="prompt()">200</button></td>
+            <td><button onclick="prompt()">200</button></td> -->
         </tr>
         <!--- Table Rows 100 points -->
-        <tr>
-            <td><button>100</button></td>
-            <td><button>100</button></td>
-            <td><button>100</button></td>
-            <td><button>100</button></td>
-            <td><button>100</button></td>
+        <tr id = 'category5'>
+            <!-- <td><button onclick="prompt()">100</button></td>
+            <td><button onclick="prompt()">100</button></td>
+            <td><button onclick="prompt()">100</button></td>
+            <td><button onclick="prompt()">100</button></td>
+            <td><button onclick="prompt()">100</button></td> -->
         </tr>
     </table>
+</div>
+<script src="./Jeopardy.js"></script>
 </body>
 </html>
