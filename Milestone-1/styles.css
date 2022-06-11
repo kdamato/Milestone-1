@@ -1,8 +1,8 @@
 body {
-    background-color:black;
+    background-color: black;
 }
 
-h1 {
+#game-name {
     color:white;
     text-align: left;
     display: flex;
@@ -10,6 +10,18 @@ h1 {
     margin: 0;
     align-items: center;
     height: 10vh;
+    font-size: 50px;
+}
+
+#score {
+    color:white;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: left;
+    height: 10vh;
+    font-size: 50px;
 }
 
 hr {
@@ -25,7 +37,7 @@ table, th, td {
 table {
     display:flex;
     justify-content: center;
-    margin: 5px;
+    margin: 0;
     align-items: center;
     height: 80vh;
     background-color: black;
@@ -35,13 +47,14 @@ th {
     color: white;
 }
 
-td button{
+td{
     background: blue;
     color: gold;
     align: center;
     width: 100%;
-    padding: 15px;
-    font-size: 20px;
+    padding: 100px;
+    font-size: 50px;
+    border: black solid 3px;
 }
 
 th, td {

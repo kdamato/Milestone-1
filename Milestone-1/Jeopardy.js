@@ -4,9 +4,12 @@ const category3 = 'category3'
 const category4 = 'category4'
 const category5 = 'category5'
 
+let userScore = 0;
+
 function checkAnswer(userAnswer, correctAnswer){
     if(userAnswer === correctAnswer){
         alert('Well Done. Correct answer')
+        userScore = userScore + 100
     }
     else{
         alert('Sorry, your answer is incorrect')
@@ -75,8 +78,8 @@ const questions = {
             B. cat
             C. bird
             D. fish`, 
-        category: category1,
-        correctAnswer: 'A',
+            category: category1,
+            correctAnswer: 'A',
         },
         {
             text: `what is the color of the sky?
@@ -121,8 +124,8 @@ const questions = {
         B. cat
         C. bird
         D. fish`, 
-    category: category1,
-    correctAnswer: 'A',
+        category: category1,
+        correctAnswer: 'A',
     },
     {
         text: `what is the color of the sky?
@@ -166,8 +169,8 @@ const questions = {
         B. cat
         C. bird
         D. fish`, 
-    category: category1,
-    correctAnswer: 'A',
+        category: category1,
+        correctAnswer: 'A',
     },
     {
         text: `what is the color of the sky?
@@ -211,8 +214,8 @@ const questions = {
         B. cat
         C. bird
         D. fish`, 
-    category: category1,
-    correctAnswer: 'A',
+        category: category1,
+        correctAnswer: 'A',
     },
     {
         text: `what is the color of the sky?
@@ -253,12 +256,11 @@ const questions = {
 }
 
 function createBoard() {
-    // const category1tr = document.getElementById('category1')
     const level500 = questions.level500
     for (let i = 0 ; i < level500.length ; i++){    
         const question = level500[i]    
-        // if (question.level === levels[i]){
             let td = document.createElement('td')
+            let value = 500
             td.addEventListener('click', function(){
                 const userAnswer = getUserAnswerFromQuestion(question.text)
                 //return to this later to account for null//
@@ -266,16 +268,16 @@ function createBoard() {
                     checkAnswer(userAnswer, question.correctAnswer)
                 }
                 console.log(userAnswer)
+                td.style.backgroundColor = 'black'
+                td.style.color = 'black'
             })
             td.innerHTML = levels[i]
-            document.getElementById(question.category).appendChild(td)
-        // }      
+            document.getElementById(question.category).appendChild(td)     
     }
 
     const level400 = questions.level400
     for (let i = 0 ; i < level400.length ; i++){    
         const question = level400[i]    
-        // if (question.level === levels[i]){
             let td = document.createElement('td')
             td.addEventListener('click', function(){               
                 const userAnswer = getUserAnswerFromQuestion(question.text)
@@ -283,16 +285,16 @@ function createBoard() {
                     checkAnswer(userAnswer, question.correctAnswer)
                 }
                 console.log(userAnswer)
+                td.style.backgroundColor = 'black'
+                td.style.color = 'black'
             })
             td.innerHTML = levels[i]
-            document.getElementById(question.category).appendChild(td)
-        // }      
+            document.getElementById(question.category).appendChild(td)      
     }
 
     const level300 = questions.level300
     for (let i = 0 ; i < level300.length ; i++){    
-        const question = level300[i]    
-        // if (question.level === levels[i]){
+        const question = level300[i]   
             let td = document.createElement('td')
             td.addEventListener('click', function(){
                 const userAnswer = getUserAnswerFromQuestion(question.text)
@@ -300,16 +302,16 @@ function createBoard() {
                     checkAnswer(userAnswer, question.correctAnswer)
                 }
                 console.log(userAnswer)
+                td.style.backgroundColor = 'black'
+                td.style.color = 'black'
             })
             td.innerHTML = levels[i]
-            document.getElementById(question.category).appendChild(td)
-        // }      
+            document.getElementById(question.category).appendChild(td)     
     }
 
     const level200 = questions.level200
     for (let i = 0 ; i < level200.length ; i++){    
         const question = level200[i]    
-        // if (question.level === levels[i]){
             let td = document.createElement('td')
             td.addEventListener('click', function(){
                 const userAnswer = getUserAnswerFromQuestion(question.text)
@@ -317,16 +319,16 @@ function createBoard() {
                     checkAnswer(userAnswer, question.correctAnswer)
                 }
                 console.log(userAnswer)
+                td.style.backgroundColor = 'black'
+                td.style.color = 'black'
             })
             td.innerHTML = levels[i]
-            document.getElementById(question.category).appendChild(td)
-        // }      
+            document.getElementById(question.category).appendChild(td)     
     }
 
     const level100 = questions.level100
     for (let i = 0 ; i < level100.length ; i++){    
         const question = level100[i]    
-        // if (question.level === levels[i]){
             let td = document.createElement('td')
             td.addEventListener('click', function(){
                 const userAnswer = getUserAnswerFromQuestion(question.text)
@@ -334,15 +336,12 @@ function createBoard() {
                     checkAnswer(userAnswer, question.correctAnswer)
                 }
                 console.log(userAnswer)
+                td.style.backgroundColor = 'black'
+                td.style.color = 'black'
             })
             td.innerHTML = levels[i]
-            document.getElementById(question.category).appendChild(td)
-        // }      
+            document.getElementById(question.category).appendChild(td)    
     }
 }
 
 createBoard()
-
-// function removeButton(){
-
-// }
