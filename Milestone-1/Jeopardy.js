@@ -4,12 +4,17 @@ const category3 = 'category3'
 const category4 = 'category4'
 const category5 = 'category5'
 
-let userScore = 0;
+var userScore = 0;
+
+function displayScore(){
+    document.getElementById('score').innerHTML = 'Score:' + ' ' + userScore
+}
 
 function checkAnswer(userAnswer, correctAnswer){
     if(userAnswer === correctAnswer){
         alert('Well Done. Correct answer')
         userScore = userScore + 100
+        displayScore()
     }
     else{
         alert('Sorry, your answer is incorrect')
@@ -343,5 +348,7 @@ function createBoard() {
             document.getElementById(question.category).appendChild(td)    
     }
 }
+
+displayScore()
 
 createBoard()
