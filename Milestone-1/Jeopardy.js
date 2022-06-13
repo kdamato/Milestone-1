@@ -28,50 +28,52 @@ function getUserAnswerFromQuestion(question) {
 
 const levels = ['500', '400', '300', '200', '100']
 
+
+
 const questions = {
     level500: [
         {
-            text: `what dog barks?
-            A. dog
-            B. cat
-            C. bird
-            D. fish`, 
+            text: `This movie depicts a jewish father hiding the horrors of the holocaust from his son by turning their time at concentration camps into a game.
+            A. Life is Beautiful
+            B. Schindler's list
+            C. The Pianist
+            D. The Boy in the Striped Pajamas`, 
         category: category1,
         correctAnswer: 'A',
         },
         {
-            text: `what is the color of the sky?
-            A. blue
-            B. red
-            C. green
-            D. yellow`,
+            text: `Who voiced Stuart Little in the 1999 family-film "Stuart Little?
+            A. Michael J. Fox
+            B. Mark Hamill
+            C. Robin Williams
+            D. Jim Carrey`,
             category: category2,
             correctAnswer: 'A',
         },
         {
-            text: `what childrens game involves two safe spots?
-            A. ring around the rosie
-            B. tag
-            C. running bases
-            D. hide and seek`,
+            text: `What movie won the 2003 best visual effects Academy Award?
+            A. Master and Commander: The Far Side of the World
+            B. Pirates of the Caribbean: The Curse of the Black Pearl
+            C. The Lord of the Rings: The Return of the King
+            D. King Kong`,
             category: category3,
             correctAnswer: 'C',
         },
         {
-            text: `what is the color of the sky?
-            A. blue
-            B. red
-            C. green
-            D. yellow`,
+            text: `What year was Terminator 2: Judgement Day released?
+            A. 1991
+            B. 1993
+            C. 1995
+            D. 1997`,
             category: category4,
             correctAnswer: 'A',
         },
         {
-            text: `what childrens game involves two safe spots?
-            A. ring around the rosie
-            B. tag
-            C. running bases
-            D. hide and seek`,
+            text: `Where was The Forest Moon of Endor shot?
+            A. Australia
+            B. Africa
+            C. California
+            D. Florida`,
             category: category5,
             correctAnswer: 'C',
         }
@@ -214,11 +216,10 @@ const questions = {
         correctAnswer: 'C',
     }],
     level100: [  {
-        text: `what dog barks?
-        A. dog
-        B. cat
-        C. bird
-        D. fish`, 
+        text: `What does HTML stand for?
+        A. Hyper Text Markup Language
+        B. Hyperlinks and Text Markup Language
+        C. Home Tool Markup Language`, 
         category: category1,
         correctAnswer: 'A',
     },
@@ -265,7 +266,6 @@ function createBoard() {
     for (let i = 0 ; i < level500.length ; i++){    
         const question = level500[i]    
             let td = document.createElement('td')
-            let value = 500
             td.addEventListener('click', function(){
                 const userAnswer = getUserAnswerFromQuestion(question.text)
                 //return to this later to account for null//
