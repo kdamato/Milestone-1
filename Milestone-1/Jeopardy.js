@@ -32,11 +32,10 @@ const questions = {
         },
         {
             text: `A christmas rom-com about a father meeting his rich, future son-in-law for the first time. Little does the father know, his daughters fiancee is his biggest nightmare and he does not approve.
-            A. Why Him?
+            A. Four Christmases
             B. Just Friends
-            C. Four Christmases
+            C. Why Him?
             D. Holidate`,
-            correctAnswer: 'A',
             category: category3,
             correctAnswer: 'C',
             score: 300,
@@ -53,12 +52,12 @@ const questions = {
         },
         {
             text: `What childrens movie stars the greek demi-god, the son of Zeus?
-            A. Hercules
+            A. The Lion King
             B. Toy Story
             C. A Bug's Life
-            D. The Lion King`,
+            D. Hercules`,
             category: category5,
-            correctAnswer: 'C',
+            correctAnswer: 'D',
             score: 100,
         }
     ],
@@ -105,9 +104,9 @@ const questions = {
         },
         {
             text: `Who plays Jack Sparrow in the Pirates of the Carribean franchise?
-            A. Johnny Depp
+            A. Matthew McConaughey
             B. Hugh Jackman
-            C. Matthew McConaughey
+            C. Johnny Depp
             D. Jim Carrey`,
             category: category5,
             correctAnswer: 'C',
@@ -121,7 +120,7 @@ const questions = {
             C. The Lord of the Rings: The Return of the King
             D. King Kong`,
         category: category1,
-        correctAnswer: 'A',
+        correctAnswer: 'C',
         score: 500,
     },
     {
@@ -145,7 +144,7 @@ const questions = {
         score: 300,
     },
     {
-        text: `Who won best actor in a leading role in the 2015 film, "The Revenant?
+        text: `Who won best actor in a leading role in the 2015 film, "The Revenant"?
         A. Leonardo DiCaprio
         B. Tom Hardy
         C. Will Poulter
@@ -206,9 +205,9 @@ const questions = {
     },
     {
         text: `What year was Spider-Man: No Way Home released?
-        A. 2021
+        A. 2017
         B. 2019
-        C. 2017
+        C. 2021
         D. 2022`,
         category: category5,
         correctAnswer: 'C',
@@ -221,7 +220,7 @@ const questions = {
         C. California
         D. Florida`, 
         category: category1,
-        correctAnswer: 'A',
+        correctAnswer: 'C',
         score: 500,
     },
     {
