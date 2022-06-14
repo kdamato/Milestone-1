@@ -125,31 +125,31 @@ const questions = {
         score: 500,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `What film won the best cinematography award in 2010?
+        A. Avatar
+        B. Shuttered Island
+        C. Inception
+        D. Clash of the Titans`,
         category: category2,
         correctAnswer: 'A',
         score: 400,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `What film won best actor in a leading role in 1995?
+        A. Billy Madison
+        B. Batman Forever
+        C. Forrest Gump
+        D. Seven`,
         category: category3,
         correctAnswer: 'C',
         score: 300,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `Who won best actor in a leading role in the 2015 film, "The Revenant?
+        A. Leonardo DiCaprio
+        B. Tom Hardy
+        C. Will Poulter
+        D. Domhnall Gleeson`,
         category: category4,
         correctAnswer: 'A',
         score: 200,
@@ -175,31 +175,31 @@ const questions = {
         score: 500,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `What year was "James Bond: You Only Live Twice" released?
+        A. 1967
+        B. 1965
+        C. 1969
+        D. 1971`,
         category: category2,
         correctAnswer: 'A',
         score: 400,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `What year was "Big Fat Liar," starring Frankie Muniz, released?
+        A. 2004
+        B. 2005
+        C. 2002
+        D. 1999`,
         category: category3,
         correctAnswer: 'C',
         score: 300,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `What year was Disney's "Moana" released?
+        A. 2016
+        B. 2014
+        C. 2018
+        D. 2022`,
         category: category4,
         correctAnswer: 'A',
         score: 200,
@@ -225,31 +225,31 @@ const questions = {
         score: 500,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `Where was the Mummy filmed?
+        A. Morocco and the United Kingdom
+        B. Egypt and the United States
+        C. Australia and the United Kingdom
+        D. Morocco and the United States`,
         category: category2,
         correctAnswer: 'A',
         score: 400,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `Where were the shots for Star Wars' Tattoine located?
+        A. Switzerland
+        B. Spain
+        C. Tunisia
+        D. Guatemala`,
         category: category3,
         correctAnswer: 'C',
         score: 300,
     },
     {
-        text: `what is the color of the sky?
-        A. blue
-        B. red
-        C. green
-        D. yellow`,
+        text: `Where was the cave of Dragon-Glass in Game of Thrones shot?
+        A. Iceland
+        B. Greenland
+        C. Germany
+        D. Australia`,
         category: category4,
         correctAnswer: 'A',
         score: 200,
