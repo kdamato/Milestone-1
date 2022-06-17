@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    text: blue;
+}
+
+nav ul {
+    list-style-type: none;
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
