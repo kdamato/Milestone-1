@@ -230,7 +230,7 @@ const questions = {
     },
     {
         text: `Where was the scene in the 2001 horror "Hannibal" in which Hannibal Lecter pretends to be Doctor Fell before his most gruesome kill shot?
-        A. Italy
+        A. Florence
         B. France
         C. Rome
         D. England`,
@@ -239,11 +239,11 @@ const questions = {
         score: 400,
     },
     {
-        text: `Where were the shots for Star Wars' Tattoine located?
-        A. Switzerland
-        B. Spain
-        C. Tunisia
-        D. Guatemala`,
+        text: `Where are the cemetary scenes from the 1968 "Night of the Living Dead" filmed?
+        A. New Jersey
+        B. New York
+        C. Pennsylvania
+        D. Virginia`,
         category: category3,
         correctAnswer: 'C',
         score: 300,
