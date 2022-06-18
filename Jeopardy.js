@@ -5,6 +5,7 @@ const category4 = 'category4'
 const category5 = 'category5'
 
 var userScore = 0;
+var beatableScore = randomBeatableScore(7500);
 
 const levels = ['500', '400', '300', '200', '100']
 
@@ -265,6 +266,25 @@ const questions = {
     }],
 }
 
+function randomBeatableScore(max){
+    return Math.floor(Math.random() * max);
+}
+
+function checkStatus(userScore, beatableScore){
+    document.getElementById('button').addEventListener('click', function(){
+    if(userScore > beatableScore){
+        alert('You Win!')
+    } else if(userScore < beatableScore){
+        alert('You Lose!')
+    } else if (userScore === beatableScore){
+        alert('You Tie!')
+    }
+    })}
+
+function displayBeatableScore(){
+    document.getElementById('beatableScore').innerHTML = 'Beatable Score:' + ' ' + beatableScore
+}
+
 function displayScore(){
     document.getElementById('score').innerHTML = 'Score:' + ' ' + userScore
 }
@@ -291,7 +311,7 @@ function createBoard() {
         const question = level500[i]    
             let td = document.createElement('td')
             td.addEventListener('click', function(){
-                const userAnswer = getUserAnswerFromQuestion(question.text)
+                const userAnswer = getUserAnswerFromQuestion(question.text).toUpperCase()
                 //return to this later to account for null//
                 if (userAnswer !== null){
                     checkAnswer(userAnswer, question.correctAnswer, question.score)
@@ -309,7 +329,7 @@ function createBoard() {
         const question = level400[i]    
             let td = document.createElement('td')
             td.addEventListener('click', function(){               
-                const userAnswer = getUserAnswerFromQuestion(question.text)
+                const userAnswer = getUserAnswerFromQuestion(question.text).toUpperCase()
                 if (userAnswer !== null){
                     checkAnswer(userAnswer, question.correctAnswer, question.score)
                 }
@@ -326,7 +346,7 @@ function createBoard() {
         const question = level300[i]   
             let td = document.createElement('td')
             td.addEventListener('click', function(){
-                const userAnswer = getUserAnswerFromQuestion(question.text)
+                const userAnswer = getUserAnswerFromQuestion(question.text).toUpperCase()
                 if (userAnswer !== null){
                     checkAnswer(userAnswer, question.correctAnswer, question.score)
                 }
@@ -343,7 +363,7 @@ function createBoard() {
         const question = level200[i]    
             let td = document.createElement('td')
             td.addEventListener('click', function(){
-                const userAnswer = getUserAnswerFromQuestion(question.text)
+                const userAnswer = getUserAnswerFromQuestion(question.text).toUpperCase()
                 if (userAnswer !== null){
                     checkAnswer(userAnswer, question.correctAnswer, question.score)
                 }
@@ -360,7 +380,7 @@ function createBoard() {
         const question = level100[i]    
             let td = document.createElement('td')
             td.addEventListener('click', function(){
-                const userAnswer = getUserAnswerFromQuestion(question.text)
+                const userAnswer = getUserAnswerFromQuestion(question.text).toUpperCase()
                 if (userAnswer !== null){
                     checkAnswer(userAnswer, question.correctAnswer, question.score)
                 }
@@ -375,4 +395,8 @@ function createBoard() {
 
 displayScore()
 
+displayBeatableScore()
+
 createBoard()
+
+checkStatus()
