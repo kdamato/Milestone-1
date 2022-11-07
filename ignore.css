@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+}
+
+#game-name {
+    color:white;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    align-items: center;
+    height: 10vh;
+    font-size: 50px;
+}
+
+#score {
+    color:white;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: left;
+    height: 10vh;
+    font-size: 50px;
+}
+
+#beatableScore {
+    color:white;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    height: 10vh;
+    font-size: 50px;
+}
+
+hr {
+    color: white;
+    height: 10px;
+    background:black;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+table {
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    height: 90vh;
+    background-color: black;
+}
+
+th {
+    color: white;
+    font-size: 22px;
+}
+
+td{
+    background: blue;
+    color: gold;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+    font-size: 50px;
+    border: black solid 3px;
+}
+
+th, td {
+    background: blue;
+    margin: 15px;
+    padding: 15px;
+    border: black 5px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.score {
+    color: white;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    align-items: center;
+}
+
+#button {
+    background-color: gold;
+    border: 1px solid gold;
+    border-radius: 5px;
+    margin-left: 45vw;
+    padding: 5px;
+    font-size: 20px;
+}

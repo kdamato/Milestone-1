@@ -1,0 +1,135 @@
+@import "btnConfig";
+@import "utilities";
+@import "config";
+
+
+.home {
+  @include set-bg($primary-color);
+  height: 600px;
+
+  h1 {
+    color: text-color-picker($light-color)
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+
+    a {
+      color: text-color-picker($primary-color);
+    }
+
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.game {
+    body {
+        background-color: black;
+    }
+    
+    h1 {
+        color:rgb(0, 0, 0);
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        margin: 0;
+        align-items: center;
+        height: 10vh;
+        font-size: 50px;
+    }
+
+    #beatableScore {
+        color:rgb(5, 26, 255);
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+        height: 10vh;
+        font-size: 50px;
+    }
+
+    table {
+            display:flex;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+            height: 90vh;
+            background-color: black;
+            border: 1px solid black;
+    }
+    th {
+        color: white;
+        font-size: 22px;
+        border: 1px solid black;
+        background: blue;
+        margin: 15px;
+        padding: 15px;
+        border: black 5px;
+    }
+    td {
+        background: blue;
+        color: gold;
+        align-items: center;
+        width: 100%;
+        padding: 100px;
+        font-size: 50px;
+        border: black solid 1px;
+        background: blue;
+        margin: 15px;
+        padding: 15px;
+        border: black 5px;
+    }
+
+    button:hover {
+        opacity: 0.5;
+    }
+
+    .score {
+        color: white;
+        text-align: right;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        align-items: center;
+    }
+
+    #button {
+        background-color: gold;
+        border: 1px solid gold;
+        border-radius: 5px;
+        margin-left: 45vw;
+        padding: 5px;
+        font-size: 20px;
+    }
+}
